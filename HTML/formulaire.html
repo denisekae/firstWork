@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="../PHP/traitement.php" method="post">
+            <h1>INSCRIPTION</h1>
+            <div class="input-box">
+                <input class="mom" type="text" id="Nom" name="Nom" placeholder="votre nom" required  maxlength="20">
+                <i class='bx bxs-user' ></i>
+            </div>
+            
+            <div class="input-box">
+                <input class="mom" type="text" id="Prenom" name="Prenom" placeholder="Prenom" required maxlength="20">
+                <i class='bx bxs-user' ></i>
+            </div>
+
+            <div class="input-box">
+                <input class="mom" type="tel" id="Telephone" name="Telephone" placeholder="phone" required maxlength="9">
+                <i class='bx bxs-phone'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label for="Sexe"> Sexe
+                <input type="radio" name="Sexe" value="M" id="sexe">M
+                <input type="radio" name="Sexe" value="F" id="sexe">F</label>
+            </div>
+            
+
+            <label for="">Pays</label>
+            <select  name="Pays" id="Pays" required>
+                <option value="Cameroun" >Cameroun</option>
+                <option value="Cote-ivoire">Cote-ivoire</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Congo">Congo</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Maroc">Maroc</option>
+            </select>
+
+            <div class="input-box">
+                <input class="mom" type="password" id="Datapass" name="Datapass" placeholder="mot de passe" required maxlength="5">
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input  type="checkbox"  required>J'accepte</label>
+            </div>
+
+            <input type="reset" value="Effacer" class="btn">
+            <input type="submit" value="Envoyer" name="Envoyer" class="btn">
+        
+        </form>
+    </div>
+</body>
+</html>
